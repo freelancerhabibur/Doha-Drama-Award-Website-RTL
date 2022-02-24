@@ -1,0 +1,52 @@
+.gallery {
+    .gallery-wrapper {
+        @media only screen and (min-width: 1200px) {
+            --bs-gutter-x: 8rem;    
+        }
+    }
+    [class*=gallery_thumbnail] {
+        margin-top: 1rem;
+        background-color: $linen;
+        padding: 1rem 0.5rem; 
+
+        .gallery-nav-item {
+            border: 5px solid $marigold;
+            opacity: 0.4;
+            cursor: pointer;
+        }
+        .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+
+    .video-gallery {
+        margin-top: 3rem;
+        @media only screen and (min-width: 992px) {
+            margin-top: 0;   
+        }
+        .gallery-item {
+            position: relative;
+            padding-bottom: 57.65%;
+            object {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .photo-gallery {
+        .gallery-item {
+            position: relative;
+            padding-bottom: 57.65%;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

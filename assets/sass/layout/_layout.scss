@@ -1,0 +1,29 @@
+// Resoze Bootstrap Container Width
+.container {
+    @media only screen and (min-width: 576px) {
+        max-width: 560px;
+    }
+    @media only screen and (min-width: 768px) {
+        max-width: 750px;
+    }
+    @media only screen and (min-width: 992px) {
+        max-width: 980px;
+    }
+    @media only screen and (min-width: 1200px) {
+        max-width: 1180px;
+    }
+    @media only screen and (min-width: 1400px) {
+        max-width: 1380px;
+    }
+    @media only screen and (min-width: 1600px) {
+        max-width: 1580px;
+    }
+}
+
+@import 'hero';
+@import 'journy';
+@import 'latest_news';
+@import 'winner';
+@import 'gallery';
+@import 'funfacts';
+@import 'blog_block';

@@ -1,0 +1,75 @@
+.latest-news {
+    .news-wrapper {
+        @media only screen and (min-width: 1200px) {
+            --bs-gutter-x: 8rem;    
+        }
+    }
+    .news-list {
+        margin-top: 2.5rem;
+        @media only screen and (min-width: 992px) {
+            margin-top: 0;
+        }
+        .news-item {
+            padding: 1.2rem 1rem;
+            border-top: 1px solid rgba($color: $marigold, $alpha: 0.3);
+            transition: all 0.2s; 
+            .date {
+                font-size: 1rem;                
+
+                @media only screen and (min-width: 576px) {
+                    font-size: 1.3rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            .news-heading {
+                font-family: $font_gess_light;
+
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_sb_display;
+                }
+                a {
+                    color: $armadillo;
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    @media only screen and (min-width: 576px) {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+            &:hover {
+                background-color: $marigold;
+                .date {
+                    color: $white;
+                }
+                .news-heading {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .news-details {
+        padding-top: 1rem;
+
+        .news-heading {
+            a {
+                display: block;
+                margin: 8px 0;
+                color: $armadillo;
+                transition: all 0.2s;            
+                &:hover {
+                    color: $marigold;
+                }
+            }
+        }
+        .description {
+            margin-bottom: 1rem;
+            font-family: $font_gess_ultralight;
+
+            html[dir='ltr'] & {
+                font-family: $cronos_pro_light;
+            }
+        }
+    }
+}

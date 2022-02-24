@@ -1,0 +1,39 @@
+.funfacts {
+    margin: 2rem 0;
+    .funfacts-inner {
+        background-color: rgba($color: $armadillo, $alpha: 0.9);
+        overflow: hidden;
+    }
+    .col {
+        border: 1px solid $marigold;
+        & + .col:not(:last-child) {
+            border-left: 0;
+            border-top: 0;
+        }
+        &:first-child {
+            border-left: 0;
+        }
+        &:last-child {
+            border-top: 0;
+        }
+    }
+    .fact-item {
+        padding: 1.5rem 1rem;
+        // border-left: 1px solid $marigold;
+        .count {
+            color: $white;
+            font-family:  sans-serif;
+            margin-bottom: 0.4rem;
+            font-weight: 700;
+            font-size: 2rem;
+
+            html[dir='ltr'] & {
+                font-family: $cronos_pro_sb_display;
+            }
+        }
+        .label {
+            color: $marigold ;
+            line-height: normal;
+        }
+    }
+}

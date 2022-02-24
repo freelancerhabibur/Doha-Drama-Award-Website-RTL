@@ -1,0 +1,112 @@
+.blog-block {
+    .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+    .block-widget {
+        height: 100%;
+        padding: 1.5rem 2rem;
+
+        .title {
+            color: $spicy_mix;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            color: $nevada;
+        }
+        a.link {
+            color: $marigold;
+            font-family: sans-serif;
+            display: inline-block;
+
+            html[dir='ltr'] & {
+                font-family: $cronos_pro_display;
+            }
+        }
+        h4 {
+            color: $nevada;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        ul {
+            margin-bottom: 1.45rem;
+            li {
+                position: relative;
+                padding-right: 1.5rem;               
+                line-height: 1.8;
+                font-size: 0.9rem;
+                font-family: $font_gess_ultralight;
+
+                html[dir='ltr'] & {
+                    padding-right: 0;
+                    padding-left: 1.5rem;
+                    font-family: $cronos_pro_light;
+                }
+
+                @media only screen and (min-width: 576px) {
+                    font-size: 1.3rem;
+
+                    html[dir='ltr'] & {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0.7rem;
+                    height: 2px;
+                    background-color: $marigold;
+                    top: 17px;
+                    right: 0;
+
+                    html[dir='ltr'] & {
+                        right: inherit;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .meet-conv {
+            .figure {
+                margin-left: 1.5rem;
+                
+                html[dir='ltr'] & {
+                    margin-left: 0;
+                    margin-right: 1.5rem;
+                }
+            }
+            h4 {
+                font-family: $font_gess_light;
+
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_sb_display;
+                }
+                a {
+                    color: $spicy_mix;
+                }
+            }
+            p {
+                font-size: 1.3rem;
+            }
+            .more-btn {
+                text-align: center;
+                border: 1px solid $marigold;
+                color: $marigold;
+                font-family: $font_gess_light;
+                padding: .3rem 1rem;
+                display: inline-block;
+                margin-top: 1rem;
+                transition: all .3s;
+                &:hover {
+                    background-color: $marigold;
+                    color: $white;
+                }
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_display;
+                }
+            }
+        }
+    }
+}

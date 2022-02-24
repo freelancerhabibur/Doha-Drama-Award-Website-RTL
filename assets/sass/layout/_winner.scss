@@ -1,0 +1,236 @@
+.winner-dda {
+    background-color: $linen;
+
+    .winner-dda-carousel {
+        padding: 10px;
+    }
+
+    .filter-box {
+        margin-bottom: 30px;
+        .select-year-category {
+            select {
+                width: 100%;
+                height: 45px;
+                padding: 0.5rem;
+                font-size: 1rem;
+                font-family: $font_gess_medium;
+                border-radius: 4px;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                background: transparent url('../images/down-arrow.svg') no-repeat 10px 50%;
+                background-size: 20px;
+
+                html[dir='ltr'] & {
+                    background: transparent url("../images/down-arrow.svg") no-repeat 90% 50%;
+                    background-size: 20px;
+                    font-family: $cronos_pro_sb_display;
+                }
+            }
+        }
+    }
+
+    .winner-item {
+        background-color: $white;
+        box-shadow: 0 0 10px 0 rgba($color: $linen, $alpha: 1);
+        .caption {
+            padding: 1rem;
+            position: relative;
+            .name {
+                font-family: $font_gess_medium;
+                font-size: 1.3rem;
+                margin: 10px 0;
+                color: #6d6e72;
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_sb_display;
+                }
+            }
+            .category {
+                font-size: 1.1rem;
+            }
+            .category, .nationality {
+                font-family: $font_gess_ultralight;
+                color: #6d6e72;
+
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_light;
+                }
+            }
+            .hover-over {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $marigold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+                a {
+                    display: block;  
+                    color: $white;   
+                    font-size: 1.7rem;     
+                    
+                    html[dir='ltr'] & {
+                        font-family: $cronos_pro_sb_display;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .hover-over {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .carousel-block {
+        .section-title {
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                a {
+                    font-size: 1rem;
+                    padding: 0.7rem 1rem;
+                }
+            }
+        }
+
+        .news-slider, .meeting-slider, .activities-slider {
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid $marigold;
+        }
+        .news-details, .meeting-details, .activities-details {
+            padding-top: 1rem;
+            overflow: hidden;
+            .date {
+                font-size: 1.2rem;
+            }
+            [class*='heading'] {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+
+                a {
+                    color: $marigold;
+                }
+            }
+            .description {
+                font-size: 1.1rem;
+            }
+            .button-outline {
+                float: left;
+                padding: 0.7rem 1rem;
+                font-size: 0.9rem;
+
+                html[dir='ltr'] & {
+                    float: right;
+                }
+            }
+        }
+
+    }
+
+    .winner-head {
+        margin-bottom: 2rem;
+        .winner-name {
+            font-family: $font_gess_bold;
+            color: $spicy_mix;
+            font-size: 2.5rem;
+        }
+        .country {
+            font-family: $font_gess_light;
+            color: $spicy_mix;
+        }
+    }
+
+    .winners {
+        .winner-photo {
+            border: 4px solid $spicy_mix;
+        }
+        .text-block {
+            h2 {
+                color: $spicy_mix;
+            }
+        }
+    }
+    .video-box {
+        h3 {
+             color: $spicy_mix;
+             margin-bottom: 1rem;
+        }
+    }
+    .video-player {
+        position: relative;
+        // padding-top: 53.65%;
+        max-width: 700px;
+
+        video {
+            max-width: 100%;
+            height: auto;       
+        }
+        svg {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+            display: none;
+
+            @media screen and (min-width: 576px) {
+                width: 60px;
+                height: 60px;
+                display: block; 
+            }
+            @media screen and (min-width: 768px) {
+                width: 70px;
+                height: 70px;  
+            }
+            @media screen and (min-width: 992px) {
+                width: 80px;
+                height: 80px;  
+            }
+            @media screen and (min-width: 1200px) {
+                width: 90px;
+                height: 90px;  
+            }
+        }
+    }
+
+    .see-all-winners-btn {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+.cta {
+    .cta-inner {
+        background-color: $armadillo;
+        padding: 2rem 0;
+        margin: 3rem 0 1rem;
+
+        .button {
+            a {
+                display: inline-block;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+
+                @media screen and (min-width: 768px) {
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                }
+            }
+        }
+    }
+}

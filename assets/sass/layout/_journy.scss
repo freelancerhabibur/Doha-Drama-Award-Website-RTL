@@ -1,0 +1,127 @@
+.jouney-of-execellance {
+    background-color: $linen;
+
+    .journey-slider {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 1px;
+            background-color: $spicy_mix;
+        }
+        .journey-year {
+            text-align: center;
+
+            .year {
+                width: 95px;
+                background-color: $white;
+                margin: 1rem auto;
+                padding: .8rem 1rem;
+                border: 1px solid $spicy_mix;
+                font-family: $font_gess_medium;
+                font-size: 1rem;
+                position: relative;
+
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_sb_display;
+                }
+
+                @media only screen and (min-width: 576px) {
+                    width: 120px;
+                    margin: 2rem auto;
+                    padding: .8rem 1rem;
+                    font-size: 1.5rem;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 1px;
+                    height: 0;
+                    background-color: $spicy_mix;
+                    z-index: -1;
+                    transition: all .6s;
+                }
+            }
+            .events-name {
+                display: inline-block;
+                background-color: $quarter_pearl;
+                border: 1px solid $spicy_mix;
+                padding: .8rem 1rem;
+                font-family: $font_gess_medium;
+                color: $armadillo;
+                font-size: .9rem;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+                transform: translateY(-20px);
+                html[dir='ltr'] & {
+                    font-family: $cronos_pro_display;
+                }
+
+                @media only screen and (min-width: 576px) {
+                    padding: 1rem 1.5rem;
+                    font-size: 1.4rem;
+                }
+            }
+            .menu {
+                display: flex;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+                transform: translateY(20px);
+                a {
+                    display: block;
+                    background-color: $armadillo;
+                    color: $white;
+                    font-family: $font_gess_medium;
+                    font-size: .8rem;
+                    padding: .9rem .8rem;
+                    transition: all 0.3s;
+
+                    @media only screen and (min-width: 576px) {
+                        font-size: 1rem;
+                        padding: 1.3rem 1rem;
+                    }
+
+                    &:hover {
+                        background-color: $marigold;
+                    }
+
+                    html[dir='ltr'] & {
+                        font-family: $cronos_pro_light;
+                    }
+                }
+            }
+
+            &:hover, &.active {
+                .year::before {
+                    height: 230px;
+                }
+                .events-name, .menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .events-name {
+                    transform: translateY(0);
+                }
+                .menu{
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .swiper-button-next.swiper-button-disabled, 
+        .swiper-button-prev.swiper-button-disabled {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+footer {
+    .footer-top {
+        padding: 60px 0;
+        .widget {
+            margin-bottom: 2rem;
+            .title {
+                color: $spicy_mix;
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            p {
+                font-size: 1.2rem;
+                color: $nevada;
+                .link {
+                    font-family: sans-serif;
+                    color: $marigold;
+                    text-decoration: underline;
+
+                    html[dir='ltr'] & {
+                        font-family: $cronos_pro_light;
+                    }
+                }
+            }
+        }
+        .social-media {
+            li {
+                display: inline-block;
+                margin-left: 8px;
+                a {
+                    color: $spicy_mix;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $spicy_mix;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: $spicy_mix;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            margin-top: 1.5rem;
+
+            li {
+                display: inline-block;
+                margin-left: 1.25rem;
+                a {
+                    color: $marigold;
+                    font-size: 1.3rem;
+                    transition: all 0.3s;
+                    padding: 5px;
+
+                    html[dir='ltr'] & {
+                        font-family: $cronos_pro_light;
+                    }
+
+                    &:hover {
+                        color: $nevada;
+                    }
+                }
+            }
+        }
+    }
+
+    form {
+        .form-control {
+            border-radius: 0;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-color: $marigold;
+            }
+        }
+    }
+}

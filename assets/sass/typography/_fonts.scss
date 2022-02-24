@@ -1,0 +1,55 @@
+// Font-face Declaration
+@font-face {
+    font-family: 'GE SS Text Light';
+    src: url('../fonts/GE SS Text Light.woff2') format('woff2'),
+         url('../fonts/GE SS Text Light.woff') format('woff'),
+         url('../fonts/GE SS Text Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'GE SS Text UltraLight';
+    src: url('../fonts/GE SS Text UltraLight.woff2') format('woff2'),
+         url('../fonts/GE SS Text UltraLight.woff') format('woff'),
+         url('../fonts/GE SS Text UltraLight.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'GE SS Text Medium';
+    src: url('../fonts/GE SS Text Medium.woff2') format('woff2'),
+         url('../fonts/GE SS Text Medium.woff') format('woff'),
+         url('../fonts/GE SS Text Medium.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'GE SS Text Bold';
+    src: url('../fonts/GE SS Text Bold.woff2') format('woff2'),
+         url('../fonts/GE SS Text Bold.woff') format('woff'),
+         url('../fonts/GE SS Text Bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Cronos Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cronos Pro Display'), 
+         url('../fonts/Cronos-Pro-Display_12439.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cronos Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Cronos-Pro-Light_12448.woff') format('woff');
+}
+ 
+@font-face {
+    font-family: 'Cronos Pro Semibold Display';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Cronos-Pro-Semibold-Display_12452.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cronos Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Cronos-Pro_12459.woff') format('woff');
+}

@@ -1,0 +1,69 @@
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: $font_gess_medium;
+
+    html[dir='ltr'] & {
+        font-family: $cronos_pro_sb_display !important;
+    }
+}
+p {
+    font-size: 1rem;
+    font-family: $font_gess_light;
+    margin: 0;
+    line-height: 1.5rem;
+    @media only screen and (min-width: 576px) {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    html[dir='ltr'] & {
+        font-family: $cronos_pro_light;
+    }
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $black;
+}
+.section {
+    padding: 60px 0;
+    overflow: hidden;
+
+    @media only screen and (min-width: 576px) {
+        padding: 90px 0;
+    }
+}
+.section-title {
+    margin-bottom: 2rem;
+    .title {
+        color: $spicy_mix;
+        font-size: 1.7rem;
+
+        html[dir='ltr'] & {
+            font-family: $cronos_pro_sb_display
+        }
+
+        img {
+            width: 60px;
+            @media only screen and (min-width: 576px) {
+                width: 100px;
+            }
+        }
+
+        @media only screen and (min-width: 576px) {
+            font-size: 2.3rem;
+        }
+    }
+    .button-outline {
+        @media only screen and (max-width: 576px) {
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            font-family: 'GE SS Text Light';
+        }
+    }
+}
+[class*='flaticon'] {
+    display: flex;
+    align-items: center;
+}

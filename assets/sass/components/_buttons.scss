@@ -1,0 +1,57 @@
+.theme-btn {
+    background-color: $marigold;
+    padding: 1rem 2rem;
+    color: $white;
+    font-family: $font_gess_medium;
+    font-size: 1rem;
+    transition: all 0.3s;
+
+    @media only screen and (min-width: 576px) {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        color: $white;
+    }
+    html[dir='ltr'] & {
+        font-family: $cronos_pro_sb_display;
+    }
+}
+.button-outline {
+    text-align: center;
+    border: 1px solid $marigold;
+    padding: 1rem 1rem;
+    display: block;
+    color: $marigold;
+    font-family: $font_gess_medium;
+    max-width: 60%;
+    transition: all 0.3s;
+    &:hover {
+        color: $white;
+        background-color: $marigold;
+    }
+
+    html[dir='ltr'] & {
+        font-family: $cronos_pro_display;
+    }
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 24px;
+    height: 28px;
+    background-color: $white;
+    margin: 0;
+    transform: translateY(-50%);
+    display: flex;
+
+    &::after {
+        font-size: 1rem;
+        font-weight: bolder;
+        color: $black;
+    }
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0;
+}

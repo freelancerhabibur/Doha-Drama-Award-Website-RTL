@@ -1,0 +1,31 @@
+.breadcrumb {
+    margin: 0;
+
+    .breadcrumb-item {
+        line-height: 1.5;
+        color: $white;
+        padding-left: 0;
+
+        html[dir='ltr'] & {
+            font-family: $cronos_pro_display;
+        }
+        a {
+            color: $white;
+
+            html[dir='ltr'] & {
+                font-family: $cronos_pro_display;
+            }
+        }
+
+        & + .breadcrumb-item::before {
+            content: '>';
+            float: right;
+            color: $white;
+            padding: 0 8px;
+
+            html[dir='ltr'] & {
+                float: left;
+            }
+        }
+    }
+}

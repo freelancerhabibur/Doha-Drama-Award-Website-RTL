@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf?93fbd180f0104b865f2e670576d39f22") format("truetype"),
+url("../fonts/flaticon.woff?93fbd180f0104b865f2e670576d39f22") format("woff"),
+url("../fonts/flaticon.woff2?93fbd180f0104b865f2e670576d39f22") format("woff2"),
+url("../fonts/flaticon.eot?93fbd180f0104b865f2e670576d39f22#iefix") format("embedded-opentype"),
+url("../fonts/flaticon.svg?93fbd180f0104b865f2e670576d39f22#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-cancel:before {
+    content: "\f101";
+}
+.flaticon-user:before {
+    content: "\f102";
+}
+.flaticon-phone-call:before {
+    content: "\f103";
+}
+.flaticon-loupe:before {
+    content: "\f104";
+}
+.flaticon-home:before {
+    content: "\f105";
+}
+.flaticon-menu:before {
+    content: "\f106";
+}
